@@ -1,0 +1,5 @@
+include README.md
+include src/django_flowbite/rav.yaml
+recursive-include src/django_flowbite/templates *.html
+recursive-include src/django_flowbite/staticfiles *
+
