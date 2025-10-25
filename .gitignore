@@ -1,4 +1,4 @@
-src/django_flowbite/staticfiles/vendors
+src/django_flowbite/staticfiles/vendors/
 sample_project/local-cdn/
 
 # Python-generated files
