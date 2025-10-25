@@ -35,7 +35,7 @@
           </svg>
           <span class="sr-only">Toggle sidebar</span>
         </button>
-        <a href="{% url 'home' %}" class="flex items-center justify-between mr-4">
+        <a href="/" class="flex items-center justify-between mr-4">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SaaS</span>
         </a>
         <form action="#" method="GET" class="hidden">
@@ -627,14 +627,14 @@
             </li>
             <li>
               <a
-                href="{% url 'pricing' %}"
+                href="/pricing"
                 class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
                 >Pricing</a
               >
             </li>
             <li>
                 <a
-                  href="{% url 'user_subscription' %}"
+                  href="/account"
                   class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
                   >Billing settings</a
                 >
@@ -724,7 +724,7 @@
           >
             <li>
               <a
-                href="{% url 'account_logout' %}"
+                href="/logout"
                 class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 >Logout</a
               >
