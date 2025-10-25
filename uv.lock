@@ -70,8 +70,8 @@ wheels = [
 
 [[package]]
 name = "django-flowbite"
-version = "0.1.0"
-source = { virtual = "." }
+version = "0.0.2"
+source = { editable = "." }
 dependencies = [
     { name = "rav" },
 ]
