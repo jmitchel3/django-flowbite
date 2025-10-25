@@ -20,7 +20,7 @@ downloads:
         url: https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js.map
   staticfiles_dev:
     name: vendor
-    destination: src/staticfiles/vendors
+    destination: staticfiles/vendors
     verbose: true
     raise_on_error: true
     overwrite: true

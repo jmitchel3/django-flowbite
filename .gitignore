@@ -1,3 +1,5 @@
+src/django_flowbite/staticfiles/vendors
+
 # Python-generated files
 __pycache__/
 *.py[oc]
