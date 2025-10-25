@@ -6,9 +6,9 @@ downloads:
     raise_on_error: true
     overwrite: true
     files:
-      - name: tailwind.min.css
+      - name: theme.min.css
         overwrite: false
-        url: https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4
+        url: https://raw.githubusercontent.com/jmitchel3/django-flowbite/refs/heads/main/src/django_flowbite/staticfiles/theme/theme.min.css
       - name: flowbite.min.css
         overwrite: false
         url: https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css
@@ -27,7 +27,7 @@ downloads:
     files:
       - name: theme.min.css
         overwrite: false
-        url: https://raw.githubusercontent.com/codingforentrepreneurs/SaaS-Foundations/main/src/staticfiles/theme/saas-theme.min.css
+        url: https://raw.githubusercontent.com/jmitchel3/django-flowbite/refs/heads/main/src/django_flowbite/staticfiles/theme/theme.min.css
       - name: flowbite.min.css
         overwrite: false
         url: https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css
