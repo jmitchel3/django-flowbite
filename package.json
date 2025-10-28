@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build:css": "tailwindcss -i ./src/django_flowbite/staticfiles/tailwind/input.css -o ./src/django_flowbite/staticfiles/theme/theme.min.css --watch --minify"
+    "watch:css": "tailwindcss -i ./src/django_flowbite/staticfiles/tailwind/input.css -o ./src/django_flowbite/staticfiles/theme/theme.min.css --watch --minify",
+    "build:css": "tailwindcss -i ./src/django_flowbite/staticfiles/tailwind/input.css -o ./src/django_flowbite/staticfiles/theme/theme.min.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.16",
