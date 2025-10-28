@@ -5,6 +5,15 @@ default_language_version:
   python: python3.14
 
 repos:
+- repo: local
+  hooks:
+    - id: build-theme
+      name: Build theme.min.css
+      entry: npm run build:css
+      language: system
+      pass_filenames: false
+      files: ^(package\.json|tailwind\.config\.js|src/django_flowbite/staticfiles/tailwind/input\.css|src/django_flowbite/templates/.*\.html)$
+      always_run: false
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v5.0.0
   hooks:
@@ -70,13 +79,3 @@ repos:
   rev: 1.6.0
   hooks:
   - id: djade
-- repo: local
-  hooks:
-    - id: build-theme
-      name: Build and stage theme.min.css
-      entry: bash -c 'npm run build:css && git add -A src/django_flowbite/staticfiles/theme/'
-      language: system
-      pass_filenames: false
-      files: ^(package\.json|tailwind\.config\.js|src/django_flowbite/staticfiles/tailwind/input\.css|src/django_flowbite/templates/.*\.html)$
-      always_run: false
-      stages: [commit]
